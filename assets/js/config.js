@@ -38,7 +38,7 @@ const init_phones = ["Massive HRTF Target v2", "AudioSense DT200"],// Optional. 
 
 // Specify which targets to display
 const targets = [
-    { type:"Reference",  files:["Massive HRTF Target v2"] },
+    { type:"Reference",  files:["Massive HRTF"] },
     { type:"Blocked Canal DF HRTFs",    files:["ISO 11904 (Tilt_ -0.8dB_Oct, B_ 2dB, T_ -2dB) Target","ARI, HUTUBS, RIEC, SONICOM AVG (Tilt_ -0.8dB_Oct, B_ 2dB, T_ -2dB) Target"] },
 ];
 
@@ -49,14 +49,14 @@ const  preference_bounds_name = "Bounds",  // Preference bounds name
        allowSquigDownload = true,                     // If true, allows download of measurement data
        PHONE_BOOK = "phone_book.json",                 // Path to phone book JSON file
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
-       default_DF_name = "Massive HRTF Target v2",                   // Default RAW DF name
+       default_DF_name = "Massive HRTF",                   // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
        default_bass_shelf = 5,                         // Default Custom DF bass shelf value
        default_tilt = -0.8,                            // Default Custom DF tilt value
        default_ear = 0,                                // Default Custom DF ear gain value
        default_treble = -2,                             // Default Custom DF treble gain value
-       tiltableTargets = ["Massive HRTF Target v2"],                 // Targets that are allowed to be tilted
-       compTargets = ["Massive HRTF Target v2"],                     // Targets that are allowed to be used for compensation
+       tiltableTargets = ["Massive HRTF"],                 // Targets that are allowed to be tilted
+       compTargets = ["Massive HRTF"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
        allowLanguageSelector = false;                   // Add Language Selector on the top right of the page. If it's false, l10n feature will be disabled.
        availableLanguages = ["en", "ko"];              // List of available language codes. When you are adding a new language, make sure to use ISO 639-1 Language Codes for auto-detection.
