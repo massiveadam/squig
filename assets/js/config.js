@@ -1,5 +1,5 @@
 // Configuration options
-const init_phones = ["Haruto 2024 Target", "AudioSense DT200"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = ["Massive HRTF Target v2", "AudioSense DT200"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
@@ -13,9 +13,9 @@ const init_phones = ["Haruto 2024 Target", "AudioSense DT200"],// Optional. Whic
       alt_tutorial = true,                          // Display a configurable frequency response guide below the graph
       site_url = '/',                               // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
-      watermark_text = "HarutoHiroki",              // Optional. Watermark appears behind graphs
-      watermark_image_url = "assets/images/haruto.svg", // Optional. If image file is in same directory as config, can be just the filename
-      page_title = "HarutoHiroki",                  // Optional. Appended to the page title if share URLs are enabled
+    //   watermark_text = "HarutoHiroki",              // Optional. Watermark appears behind graphs
+    //   watermark_image_url = "assets/images/haruto.svg", // Optional. If image file is in same directory as config, can be just the filename
+      page_title = "Massive",                  // Optional. Appended to the page title if share URLs are enabled
       page_description = "View and compare frequency response graphs for earphones",
       accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
       externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
@@ -32,14 +32,12 @@ const init_phones = ["Haruto 2024 Target", "AudioSense DT200"],// Optional. Whic
       extraUploadEnabled = true,                    // Enable upload function
       extraEQEnabled = true,                        // Enable parametic eq function
       extraEQBands = 10,                            // Default EQ bands available
-      extraEQBandsMax = 20;                         // Max EQ bands available
+      extraEQBandsMax = 30;                         // Max EQ bands available
 
 // Specify which targets to display
 const targets = [
-    { type:"Reference",  files:["Haruto 2024","Haruto 2021"] },
-    { type:"Neutral",    files:["KEMAR DF","IEF Neutral 2023","Etymotic"] },
-    { type:"Reviewer",   files:["Antdroid","Banbeucmas","HBB","Precogvision","Super Review 22","Timmy","VSG"] },
-    { type:"Preference", files:["Harman IE 2019v2","Harman IE 2017v2","AutoEQ","Rtings","Sonarworks"] }
+    { type:"Reference",  files:["Massive HRTF Target v2"] },
+    { type:"Neutral",    files:["ISO 11904 (Tilt_ -0.8dB_Oct, B_ 2dB, T_ -2dB) Target","ARI, HUTUBS, RIEC, SONICOM AVG (Tilt_ -0.8dB_Oct, B_ 2dB, T_ -2dB) Target"] },
 ];
 
 // Haruto's Addons
@@ -49,16 +47,16 @@ const  preference_bounds_name = "Bounds",  // Preference bounds name
        allowSquigDownload = false,                     // If true, allows download of measurement data
        PHONE_BOOK = "phone_book.json",                 // Path to phone book JSON file
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
-       default_DF_name = "KEMAR DF",                   // Default RAW DF name
+       default_DF_name = "Massive HRTF Target v2",                   // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
-       default_bass_shelf = 8,                         // Default Custom DF bass shelf value
+       default_bass_shelf = 5,                         // Default Custom DF bass shelf value
        default_tilt = -0.8,                            // Default Custom DF tilt value
        default_ear = 0,                                // Default Custom DF ear gain value
-       default_treble = 0,                             // Default Custom DF treble gain value
-       tiltableTargets = ["KEMAR DF"],                 // Targets that are allowed to be tilted
-       compTargets = ["KEMAR DF"],                     // Targets that are allowed to be used for compensation
-       allowCreatorSupport = true;                     // Allow the creator to have a button top right to support them
-       allowLanguageSelector = true;                   // Add Language Selector on the top right of the page. If it's false, l10n feature will be disabled.
+       default_treble = -2,                             // Default Custom DF treble gain value
+       tiltableTargets = ["Massive HRTF Target v2"],                 // Targets that are allowed to be tilted
+       compTargets = ["Massive HRTF Target v2"],                     // Targets that are allowed to be used for compensation
+       allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
+       allowLanguageSelector = false;                   // Add Language Selector on the top right of the page. If it's false, l10n feature will be disabled.
        availableLanguages = ["en", "ko"];              // List of available language codes. When you are adding a new language, make sure to use ISO 639-1 Language Codes for auto-detection.
        defaultLanguage = "en";                         // Determine default (fallback) language. It should be included in the availableLanguages list.
        useBrowserLangAsDefault = true;                 // If true, the browser's language will be used as the default language. If false, the defaultLanguage setting will be used as the default.
@@ -67,6 +65,8 @@ const  preference_bounds_name = "Bounds",  // Preference bounds name
        translateAccessories = true;                    // If true, translated accessories from language files will be used over the one from config.js
        translateTargetTypes = true;                    // If true, translated target types from language files will be used over the one from config.js
        translateAlertMessages = true;                  // If true, translated alert messages from language files will be used.
+
+
 
 const harmanFilters = [
     { name: "Harman C1 2024 IE", tilt: -0.9, bass_shelf: 1, ear: 0, treble: 0.5 },
