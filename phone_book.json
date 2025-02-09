@@ -1,11 +1,8 @@
 [
   {
-    "name": "AudioSense",
+    "name": "Capra Audio",
     "phones": [
-      {
-        "name": "DT200",
-        "file": "AudioSense DT200"
-      }
+      {"name":"Ouroboros (Golem Mod)","file":["Ouroboros (Golem Mod)"]}
     ]
   }
 ]
