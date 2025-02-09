@@ -13,12 +13,12 @@ const init_phones = ["Massive HRTF Target v2", "AudioSense DT200"],// Optional. 
       alt_tutorial = true,                          // Display a configurable frequency response guide below the graph
       site_url = '/',                               // URL of your graph "homepage"
       share_url = true,                             // If true, enables shareable URLs
-    //   watermark_text = "HarutoHiroki",              // Optional. Watermark appears behind graphs
-    //   watermark_image_url = "assets/images/haruto.svg", // Optional. If image file is in same directory as config, can be just the filename
-      page_title = "Massive",                  // Optional. Appended to the page title if share URLs are enabled
-      page_description = "View and compare frequency response graphs for earphones",
-      accessories = true,                           // If true, displays specified HTML at the bottom of the page. Configure further below
-      externalLinksBar = true,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
+      watermark_text = "",              // Optional. Watermark appears behind graphs
+      watermark_image_url = "", // Optional. If image file is in same directory as config, can be just the filename
+      page_title = "",                  // Optional. Appended to the page title if share URLs are enabled
+      page_description = "MASSIVE",
+      accessories = false,                           // If true, displays specified HTML at the bottom of the page. Configure further below
+      externalLinksBar = false,                      // If true, displays row of pill-shaped links at the bottom of the page. Configure further below
       expandable = false,                           // Enables button to expand iframe over the top of the parent page
       expandableOnly = false,                       // Prevents iframe interactions unless the user has expanded it. Accepts "true" or "false" OR a pixel value; if pixel value, that is used as the maximum width at which expandableOnly is used
       headerHeight = '0px',                         // Optional. If expandable=true, determines how much space to leave for the parent page header
@@ -32,19 +32,21 @@ const init_phones = ["Massive HRTF Target v2", "AudioSense DT200"],// Optional. 
       extraUploadEnabled = true,                    // Enable upload function
       extraEQEnabled = true,                        // Enable parametic eq function
       extraEQBands = 10,                            // Default EQ bands available
-      extraEQBandsMax = 30;                         // Max EQ bands available
+      extraEQBandsMax = 30,
+      num_samples = 25,                              // Number of samples to average for smoothing
+      Scale_smoothing = 0.2;                           // Max EQ bands available
 
 // Specify which targets to display
 const targets = [
     { type:"Reference",  files:["Massive HRTF Target v2"] },
-    { type:"Neutral",    files:["ISO 11904 (Tilt_ -0.8dB_Oct, B_ 2dB, T_ -2dB) Target","ARI, HUTUBS, RIEC, SONICOM AVG (Tilt_ -0.8dB_Oct, B_ 2dB, T_ -2dB) Target"] },
+    { type:"Blocked Canal DF HRTFs",    files:["ISO 11904 (Tilt_ -0.8dB_Oct, B_ 2dB, T_ -2dB) Target","ARI, HUTUBS, RIEC, SONICOM AVG (Tilt_ -0.8dB_Oct, B_ 2dB, T_ -2dB) Target"] },
 ];
 
 // Haruto's Addons
 const  preference_bounds_name = "Bounds",  // Preference bounds name
        preference_bounds_dir = "assets/pref_bounds/",  // Preference bounds directory
        preference_bounds_startup = false,              // If true, preference bounds are displayed on startup
-       allowSquigDownload = false,                     // If true, allows download of measurement data
+       allowSquigDownload = true,                     // If true, allows download of measurement data
        PHONE_BOOK = "phone_book.json",                 // Path to phone book JSON file
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
        default_DF_name = "Massive HRTF Target v2",                   // Default RAW DF name
@@ -69,10 +71,6 @@ const  preference_bounds_name = "Bounds",  // Preference bounds name
 
 
 const harmanFilters = [
-    { name: "Harman C1 2024 IE", tilt: -0.9, bass_shelf: 1, ear: 0, treble: 0.5 },
-    { name: "Harman C2 2024 IE", tilt: -0.3, bass_shelf: .5, ear: -0.2, treble: 1 },
-    { name: "Harman C3 2024 IE", tilt: -2.1, bass_shelf: 0, ear: 0, treble: 10 },
-    { name: "Harman C4 2024 IE", tilt: -2.1, bass_shelf: 0, ear: 0.5, treble: 3.7 },
     { name: "Harman 2013 OE", tilt: 0, bass_shelf: 4.8, ear: 0, treble: -4.4 },
     { name: "Harman 2015 OE", tilt: 0, bass_shelf: 6.6, ear: 0, treble: -1.4 },
     { name: "Harman 2018 OE", tilt: 0, bass_shelf: 6.6, ear: -1.8, treble: -3 },
