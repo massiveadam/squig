@@ -5,5 +5,12 @@
       {"name":"Ouroboros (Golem Mod)","file":["Ouroboros (Golem Mod)"]},
       {"name":"Satyr 2 (Geekria)","file":["Satyr 2 (Geekria)"]}
     ]
+  },
+  {
+    "name": "Koss",
+    "phones": [
+      {"name":"KSC75","file":["KSC75"]}
+
+    ]
   }
 ]
