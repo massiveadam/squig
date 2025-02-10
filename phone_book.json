@@ -26,5 +26,12 @@
       {"name":"K701","file":["K701"]}
 
     ]
+  },
+  {
+    "name": "Audeze",
+    "phones": [
+      {"name":"Maxwell","file":["Maxwell","Maxwell (WC FreeZe)"]}
+
+    ]
   }
 ]
