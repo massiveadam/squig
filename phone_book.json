@@ -3,7 +3,8 @@
     "name": "Capra Audio",
     "phones": [
       {"name":"Ouroboros (Golem Mod)","file":["Ouroboros (Golem Mod)"]},
-      {"name":"Satyr 2 (Geekria)","file":["Satyr 2 (Geekria)"]}
+      {"name":"Satyr 2 (Geekria)","file":["Satyr 2 (Geekria)"]},
+      {"name":"Satyr 3","file":["Satyr 3"]}
     ]
   },
   {
