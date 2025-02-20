@@ -1,5 +1,5 @@
 // Configuration options
-const init_phones = ["Massive HRTF L V3", "Ouroboros (Golem Mod)"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = ["Massive HRTF L V3", "Satyr 3"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
@@ -51,10 +51,10 @@ const  preference_bounds_name = "Bounds",  // Preference bounds name
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
        default_DF_name = "Massive HRTF",                   // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
-       default_bass_shelf = 5,                         // Default Custom DF bass shelf value
-       default_tilt = -1,                            // Default Custom DF tilt value
-       default_ear = 0,                                // Default Custom DF ear gain value
-       default_treble = -4,                             // Default Custom DF treble gain value
+       default_bass_shelf = 4,                         // Default Custom DF bass shelf value
+       default_tilt = -1.2,                            // Default Custom DF tilt value
+       default_ear = -1.5,                                // Default Custom DF ear gain value
+       default_treble = -1.5,                             // Default Custom DF treble gain value
        tiltableTargets = ["Massive HRTF","Massive HRTF L V3","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                 // Targets that are allowed to be tilted
        compTargets = ["Massive HRTF","Massive HRTF L V3","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
