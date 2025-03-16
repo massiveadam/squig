@@ -1,5 +1,5 @@
 // Configuration options
-const init_phones = ["Massive HRTF V4", "Satyr 3"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = ["Massive HRTF V5", "Satyr 3"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
@@ -38,7 +38,7 @@ const init_phones = ["Massive HRTF V4", "Satyr 3"],// Optional. Which graphs to 
 
 // Specify which targets to display
 const targets = [
-    { type:"Custom",  files:["Massive HRTF","Massive HRTF L V3", "Massive HRTF V4"] },
+    { type:"Custom",  files:["Massive HRTF","Massive HRTF L V3", "Massive HRTF V4", "Massive HRTF V5"] },
     { type:"Blocked Canal DF HRTFs",  files:["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"] },
 ];
 
@@ -49,14 +49,14 @@ const  preference_bounds_name = "Bounds",  // Preference bounds name
        allowSquigDownload = true,                     // If true, allows download of measurement data
        PHONE_BOOK = "phone_book.json",                 // Path to phone book JSON file
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
-       default_DF_name = "Massive HRTF V4",          // Default RAW DF name
+       default_DF_name = "Massive HRTF V5",          // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
        default_bass_shelf = 3,                         // Default Custom DF bass shelf value
        default_tilt = -1.5,                            // Default Custom DF tilt value
        default_ear = 0,                                // Default Custom DF ear gain value
        default_treble = 0,                             // Default Custom DF treble gain value
-       tiltableTargets = ["Massive HRTF","Massive HRTF L V3","Massive HRTF V4","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                 // Targets that are allowed to be tilted
-       compTargets = ["Massive HRTF","Massive HRTF L V3","Massive HRTF V4","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                     // Targets that are allowed to be used for compensation
+       tiltableTargets = ["Massive HRTF","Massive HRTF L V3","Massive HRTF V4", "Massive HRTF V5","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                 // Targets that are allowed to be tilted
+       compTargets = ["Massive HRTF","Massive HRTF L V3","Massive HRTF V4", "Massive HRTF V5","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
        allowLanguageSelector = false;                   // Add Language Selector on the top right of the page. If it's false, l10n feature will be disabled.
        availableLanguages = ["en", "ko"];              // List of available language codes. When you are adding a new language, make sure to use ISO 639-1 Language Codes for auto-detection.
