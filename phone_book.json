@@ -26,7 +26,8 @@
   {
     "name": "AKG",
     "phones": [
-      {"name":"K701","file":["K701"]}
+      {"name":"K701","file":["K701"]},
+      {"name":"K361","file":["K361"]}
 
     ]
   },
