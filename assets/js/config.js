@@ -1,10 +1,10 @@
 // Configuration options
-const init_phones = ["Massive HRTF V5", "Satyr 3"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
+const init_phones = ["Massive HRTF V6 Target", "HD6XX"],// Optional. Which graphs to display on initial load. Note: Share URLs will override this set
       DIR = "data/",                                // Directory where graph files are stored
       default_channels = ["L","R"],                 // Which channels to display. Avoid javascript errors if loading just one channel per phone
       default_normalization = "dB",                 // Sets default graph normalization mode. Accepts "dB" or "Hz"
       default_norm_db = 60,                         // Sets default dB normalization point
-      default_norm_hz = 630,                        // Sets default Hz normalization point (500Hz is recommended by IEC)
+      default_norm_hz = 500,                        // Sets default Hz normalization point (500Hz is recommended by IEC)
       max_channel_imbalance = 5,                    // Channel imbalance threshold to show ! in the channel selector
       alt_layout = true,                            // Toggle between classic and alt layouts
       alt_sticky_graph = true,                      // If active graphs overflows the viewport, does the graph scroll with the page or stick to the viewport?
@@ -38,7 +38,7 @@ const init_phones = ["Massive HRTF V5", "Satyr 3"],// Optional. Which graphs to 
 
 // Specify which targets to display
 const targets = [
-    { type:"Custom",  files:["Massive HRTF","Massive HRTF L V3", "Massive HRTF V4", "Massive HRTF V5" ,"Meg HRTF"] },
+    { type:"Custom",  files:["Massive HRTF","Massive HRTF L V3", "Massive HRTF V4", "Massive HRTF V5" ,"Meg HRTF", "Massive HRTF V6 Target"] },
     { type:"Blocked Canal DF HRTFs",  files:["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"] },
 ];
 
@@ -49,14 +49,14 @@ const  preference_bounds_name = "Bounds",  // Preference bounds name
        allowSquigDownload = true,                     // If true, allows download of measurement data
        PHONE_BOOK = "phone_book.json",                 // Path to phone book JSON file
        default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
-       default_DF_name = "Massive HRTF V5",          // Default RAW DF name
+       default_DF_name = "Massive HRTF V6 Target",          // Default RAW DF name
        dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
-       default_bass_shelf = 4,                         // Default Custom DF bass shelf value
-       default_tilt = -0.3,                            // Default Custom DF tilt value
+       default_bass_shelf = 2,                         // Default Custom DF bass shelf value
+       default_tilt = -0.2,                            // Default Custom DF tilt value
        default_ear = 0,                                // Default Custom DF ear gain value
        default_treble = -4,                             // Default Custom DF treble gain value
-       tiltableTargets = ["Massive HRTF","Massive HRTF L V3","Massive HRTF V4", "Massive HRTF V5","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Meg HRTF"],                 // Targets that are allowed to be tilted
-       compTargets = ["Massive HRTF","Massive HRTF L V3","Massive HRTF V4", "Massive HRTF V5","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Meg HRTF"],                     // Targets that are allowed to be used for compensation
+       tiltableTargets = ["Massive HRTF","Massive HRTF L V3","Massive HRTF V4", "Massive HRTF V5","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Meg HRTF", "Massive HRTF V6 Target"],                 // Targets that are allowed to be tilted
+       compTargets = ["Massive HRTF","Massive HRTF L V3","Massive HRTF V4", "Massive HRTF V5","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Meg HRTF", "Massive HRTF V6 Target"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
        allowLanguageSelector = false;                   // Add Language Selector on the top right of the page. If it's false, l10n feature will be disabled.
        availableLanguages = ["en", "ko"];              // List of available language codes. When you are adding a new language, make sure to use ISO 639-1 Language Codes for auto-detection.
