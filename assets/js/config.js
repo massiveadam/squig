@@ -38,7 +38,7 @@ const init_phones = ["Massive HRTF V6 Target", "HD6XX"],// Optional. Which graph
 
 // Specify which targets to display
 const targets = [
-    { type:"Custom",  files:["Massive HRTF","Massive HRTF L V3", "Massive HRTF V4", "Massive HRTF V5" ,"Meg HRTF", "Massive HRTF V6 Target"] },
+    { type:"Custom",  files:["Massive HRTF V6 Target", "Meg HRTF"] },
     { type:"Blocked Canal DF HRTFs",  files:["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904"] },
 ];
 
@@ -55,8 +55,8 @@ const  preference_bounds_name = "Bounds",  // Preference bounds name
        default_tilt = -0.2,                            // Default Custom DF tilt value
        default_ear = 0,                                // Default Custom DF ear gain value
        default_treble = -4,                             // Default Custom DF treble gain value
-       tiltableTargets = ["Massive HRTF","Massive HRTF L V3","Massive HRTF V4", "Massive HRTF V5","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Meg HRTF", "Massive HRTF V6 Target"],                 // Targets that are allowed to be tilted
-       compTargets = ["Massive HRTF","Massive HRTF L V3","Massive HRTF V4", "Massive HRTF V5","ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Meg HRTF", "Massive HRTF V6 Target"],                     // Targets that are allowed to be used for compensation
+       tiltableTargets = ["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Meg HRTF", "Massive HRTF V6 Target"],                 // Targets that are allowed to be tilted
+       compTargets = ["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Meg HRTF", "Massive HRTF V6 Target"],                     // Targets that are allowed to be used for compensation
        allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
        allowLanguageSelector = false;                   // Add Language Selector on the top right of the page. If it's false, l10n feature will be disabled.
        availableLanguages = ["en", "ko"];              // List of available language codes. When you are adding a new language, make sure to use ISO 639-1 Language Codes for auto-detection.
