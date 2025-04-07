@@ -2,8 +2,8 @@
   {
     "name": "Capra Audio",
     "phones": [
-      {"name":"Ouroboros Reprint (Golem)","file":["Ouro (golem)", "OuroborosGolem   (glasses)"]},
-      {"name":"Satyr 3","file":["Satyr 3 (Stock)","Satyr 3 (Massive Mod)"]}
+      {"name":"Ouroboros Reprint (Golem)","file":["Ouro (golem)"]},
+      {"name":"Satyr 3","file":["Satyr 3 (Centered)","Satyr 3 (Forward)"]}
     ]
   },
   {
@@ -16,13 +16,12 @@
   {
     "name": "Sennheiser",
     "phones": [
-      {"name":"HD6XX","file":["HD6XX","HD6XX (Forward)","HD6XX (Backward)","HD6XX (Soulwit)"]}
+      {"name":"HD6XX","file":["HD6XX","HD6XX (Forward)","HD6XX (Backward)","HD6XX (Soulwit)","HD6XX (Geekria)"]}
     ]
   },
   {
     "name": "AKG",
     "phones": [
-      {"name":"K701","file":["K701"]},
       {"name":"K361","file":["K361"]}
 
     ]
@@ -30,7 +29,7 @@
   {
     "name": "Audeze",
     "phones": [
-      {"name":"Maxwell","file":["Maxwell"]}
+      {"name":"Maxwell","file":["Maxwell (Wired)", "Maxwell (Wired) WC FreeZe"]}
 
     ]
   }
