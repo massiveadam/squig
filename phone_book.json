@@ -3,8 +3,6 @@
     "name": "Capra Audio",
     "phones": [
       {"name":"Ouroboros Reprint (Golem)","file":["Ouro (golem)", "OuroborosGolem   (glasses)"]},
-      {"name":"Ouroboros (Golem Mod)","file":["Ouroboros (Golem Mod)"]},
-      {"name":"Satyr 2 (Geekria)","file":["Satyr 2 (Geekria)"]},
       {"name":"Satyr 3","file":["Satyr 3 (Stock)","Satyr 3 (Massive Mod)"]}
     ]
   },
@@ -18,9 +16,7 @@
   {
     "name": "Sennheiser",
     "phones": [
-      {"name":"HD650","file":["HD650 (Geekria)","HD650 (Mystery)"]},
-      {"name":"HD6XX","file":["HD6XX","HD6XX (Forward)","HD6XX (Backward)","HD6XX (Soulwit)"]}
-
+      {"name":"HD6XX","file":["HD6XX","HD6XX (Forward)","HD6XX (Backwards)","HD6XX (Soulwit)"]}
     ]
   },
   {
@@ -34,7 +30,7 @@
   {
     "name": "Audeze",
     "phones": [
-      {"name":"Maxwell","file":["Maxwell","Maxwell (WC FreeZe)"]}
+      {"name":"Maxwell","file":["Maxwell"]}
 
     ]
   }
