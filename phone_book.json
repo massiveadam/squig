@@ -16,7 +16,8 @@
   {
     "name": "Sennheiser",
     "phones": [
-      {"name":"HD6XX","file":["HD6XX","HD6XX (Forward)","HD6XX (Backward)","HD6XX (Soulwit)","HD6XX (Geekria)"]}
+      {"name":"HD6XX","file":["HD6XX","HD6XX (Forward)","HD6XX (Backward)","HD6XX (Soulwit)","HD6XX (Geekria)"]},
+      {"name":"HD560s (Worn)","file":["HD560s (worn)"]}
     ]
   },
   {
