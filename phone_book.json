@@ -33,5 +33,11 @@
       {"name":"Maxwell","file":["Maxwell (Wired)", "Maxwell (Wired) WC FreeZe"]}
 
     ]
+  },
+    {
+    "name": "HIFIMAN",
+    "phones": [
+      {"name":"Arya Stealth (Refurb)","file":["Arya Stealth"]}
+    ]
   }
 ]
