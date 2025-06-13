@@ -37,7 +37,8 @@
     {
     "name": "HIFIMAN",
     "phones": [
-      {"name":"Arya Stealth (Refurb)","file":["Arya Stealth"]}
+      {"name":"Arya Stealth (Refurb)","file":["Arya Stealth"]},
+      {"name":"Arya Stealth 2","file":["Arya Stealth 2"]}
     ]
   }
 ]
