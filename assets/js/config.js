@@ -44,30 +44,30 @@ const targets = [
 ];
 
 // Haruto's Addons
-const  preference_bounds_name = "Bounds",  // Preference bounds name
-       preference_bounds_dir = "assets/pref_bounds/",  // Preference bounds directory
-       preference_bounds_startup = false,              // If true, preference bounds are displayed on startup
-       allowSquigDownload = true,                     // If true, allows download of measurement data
-       PHONE_BOOK = "phone_book.json",                 // Path to phone book JSON file
-       default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
-       default_DF_name = "Massive HRTF V6 Target",          // Default RAW DF name
-       dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
-       default_bass_shelf = 0,                         // Default Custom DF bass shelf value
-       default_tilt = -2,                            // Default Custom DF tilt value
-       default_ear = 0,                                // Default Custom DF ear gain value
-       default_treble = 7,                             // Default Custom DF treble gain value
-       tiltableTargets = ["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Meg HRTF", "Massive HRTF V6 Target", "Austen V1 HRTF", "Austen V2 HRTF", "OPEN CANAL R V1"],                 // Targets that are allowed to be tilted
-       compTargets = ["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Meg HRTF", "Massive HRTF V6 Target", "Austen V1 HRTF", "Austen V2 HRTF", "OPEN CANAL R V1"],                     // Targets that are allowed to be used for compensation
-       allowCreatorSupport = false;                     // Allow the creator to have a button top right to support them
-       allowLanguageSelector = false;                   // Add Language Selector on the top right of the page. If it's false, l10n feature will be disabled.
-       availableLanguages = ["en", "ko"];              // List of available language codes. When you are adding a new language, make sure to use ISO 639-1 Language Codes for auto-detection.
-       defaultLanguage = "en";                         // Determine default (fallback) language. It should be included in the availableLanguages list.
-       useBrowserLangAsDefault = true;                 // If true, the browser's language will be used as the default language. If false, the defaultLanguage setting will be used as the default.
-       translateHeader = true;                         // If true, translated header link from language files will be used over the one from config.js
-       translateTutorial = true;                       // If true, translated tutorial from language files will be used over the one from config.js
-       translateAccessories = true;                    // If true, translated accessories from language files will be used over the one from config.js
-       translateTargetTypes = true;                    // If true, translated target types from language files will be used over the one from config.js
-       translateAlertMessages = true;                  // If true, translated alert messages from language files will be used.
+const preference_bounds_name = "Bounds",  // Preference bounds name
+      preference_bounds_dir = "assets/pref_bounds/",  // Preference bounds directory
+      preference_bounds_startup = false,              // If true, preference bounds are displayed on startup
+      allowSquigDownload = true,                     // If true, allows download of measurement data
+      PHONE_BOOK = "phone_book.json",                 // Path to phone book JSON file
+      default_y_scale = "40db",                       // Default Y scale; values: ["20db", "30db", "40db", "50db", "crin"]
+      default_DF_name = "Massive HRTF V6 Target",          // Default RAW DF name
+      dfBaseline = true,                              // If true, DF is used as baseline when custom df tilt is on
+      default_bass_shelf = 0,                         // Default Custom DF bass shelf value
+      default_tilt = -2,                            // Default Custom DF tilt value
+      default_ear = 0,                                // Default Custom DF ear gain value
+      default_treble = 7,                             // Default Custom DF treble gain value
+      tiltableTargets = ["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Meg HRTF", "Massive HRTF V6 Target", "Austen V1 HRTF", "Austen V2 HRTF", "OPEN CANAL R V1"],                 // Targets that are allowed to be tilted
+      compTargets = ["ARI, HUTUBS, RIEC, SONICOM AVG","ISO 11904","Meg HRTF", "Massive HRTF V6 Target", "Austen V1 HRTF", "Austen V2 HRTF", "OPEN CANAL R V1"],                     // Targets that are allowed to be used for compensation
+      allowCreatorSupport = false,                     // Allow the creator to have a button top right to support them
+      allowLanguageSelector = false,                   // Add Language Selector on the top right of the page. If it's false, l10n feature will be disabled.
+      availableLanguages = ["en", "ko"],              // List of available language codes. When you are adding a new language, make sure to use ISO 639-1 Language Codes for auto-detection.
+      defaultLanguage = "en",                         // Determine default (fallback) language. It should be included in the availableLanguages list.
+      useBrowserLangAsDefault = true,                 // If true, the browser's language will be used as the default language. If false, the defaultLanguage setting will be used as the default.
+      translateHeader = true,                         // If true, translated header link from language files will be used over the one from config.js
+      translateTutorial = true,                       // If true, translated tutorial from language files will be used over the one from config.js
+      translateAccessories = true,                    // If true, translated accessories from language files will be used over the one from config.js
+      translateTargetTypes = true,                    // If true, translated target types from language files will be used over the one from config.js
+      translateAlertMessages = true;                  // If true, translated alert messages from language files will be used.
 
 
 
